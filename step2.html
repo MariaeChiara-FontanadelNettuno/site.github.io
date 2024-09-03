@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Fontana del Nettuno</title>
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header {
+			font-size: large;
+			padding: 0.3em;
+			background: url('immagini/top01.jpg') no-repeat center center;
+			background-size: cover;
+			text-align: center;
+		}
+
+		#left {
+			background: #ffffff;
+		}
+		
+		#right {
+			background: #ffffff;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+		#footer {
+			font-size: small;
+			padding: 0.3em;
+			background: #ffffff;
+			text-align: center;
+		}
+		
+		 a {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: none; /* Remove o sublinhado, se desejar */
+  }
+       a:hover {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse, opcional */
+  }
+  
+  h2 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+
+  h3 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+    
+    
+	</style>
+	
+	
+</head>
+
+<body>
+
+	<header id="header">
+	
+	<h1 style="color: white;">Bologna’s <i>Fontana del Nettuno</i>:</h1>
+	<p style="color: white;">A symbol of the city and a collaborative effort by Giambologna and Tommaso Laureti</p>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<article>
+			
+	<ul>
+				<a href="index.html">Home</a>
+				<a href="methodology.html">Methodology</a>
+				<a href="projectsteps.html">Project steps</a>
+				<a href="discussion.html">Discussion and Conclusion</a>
+			</ul>			
+			
+				<h2>STEP 2 - Finding information about the creators of the artwork: Giambologna and Tommaso Laureti</h2>
+	       
+            <h3>QUERY 5</h3>
+            
+            With the following query we wanted to ask the question <strong>“What are the cultural events provided by Giambologna in Bologna?”</strong> In order to have a complete  picture of how active the artist was in Bologna. <br>
+            
+            <pre>
+PREFIX cis: &lt;http://dati.beniculturali.it/cis/&gt;
+PREFIX clv: &lt;https://w3id.org/italia/onto/CLV/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+
+SELECT DISTINCT ?culturalevent ?eventlabel ?author ?authorlabel ?place
+WHERE {
+  ?culturalevent a cis:CulturalEvent ;
+                rdfs:label ?eventlabel .
+  ?culturalevent cis:involvesCulturalEntity ?culturalEntity .
+  ?culturalEntity a-cd:hasAuthor ?author .
+  ?author rdfs:label ?authorlabel
+  FILTER(REGEX(?authorlabel, "Giambologna", "i"))
+  ?place a cis:GeographicalFeature ;
+         rdfs:label "Bologna"
+}
+
+</pre> 
+
+
+            <h3>Results:</h3>
+            
+            We get a long list of interesting results. The following “CulturalEvent” is the most useful for us as it lists different artworks by Giambologna:<br>
+            
+            <a href="https://w3id.org/arco/resource/CulturalEvent/9bf884006fa9dc5d96eebb962ac17f04">Giambologna, gli dei, gli eroi. Genesi e fortuna di uno stile europeo nella scultura</a> <br><br>
+            
+            This is an interesting result because although it shows Giambologna’s works in Firenze, the descriptions help us understand that <strong>the artist was closely linked to the de' Medici family</strong> and realized many sculptures on their commission. <br> <br>
+            
+            <img src="immagini/014.jpg" alt="screen" width="700"> <br> <br>
+            
+            Here are some works by Giambologna,  all to be found in different collections in Firenze: <br> <br>
+            
+            <img src="immagini/019.jpg" alt="screen" width="700"> <br>
+            
+            Among the results, we find another IRI of the artist with his French name Jean de Boulogne as he was also known: <br>
+            
+            <a href="https://dati.beniculturali.it/lodview-arco/resource/Agent/1b6513fa0d43bfc0f98f36c6e9f5057c.html">IRI Jean de Boulogne detto Giambologna</a> <br><br>
+            
+            We also find a (possible) portray of the artist: <br>
+            <strong><i>Ritratto del Giambologna (?) (scultura - busto) by Tacca Pietro (attribuito) (sec. XVII):</strong></i> <br>
+            
+            <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900382335">IRI Ritratto del Giambologna</a> <br><br>
+            
+            <img src="immagini/020.jpg" alt="screen" width="200"> <br> <br>
+            
+            This result also provides historical information that tells us that <strong>there used to be a similar portrait/sculpture of the artist in the <i>Pinacoteca di Bologna</i> but unfortunately it went missing</strong>. <br> <br>
+            All the other results obtained by running query  5 confirm the above analysis, that is to say, that <strong>Giambologna was a very influential artist of his time, who worked for ‘de Medici family and was very active in Firenze (XVI-XVII century)</strong>.<br> <br>
+            
+            
+            
+            <h3>QUERY 6</h3>
+            
+            Still, we want to give it another try and use the keyword <strong>UNION</strong> to ask for information about <strong>cultural properties associated with Giambologna in either Bologna or Florence</strong>. We add the keyword LIMIT to focus on a  specific amount of results.<br>
+            
+            
+            <pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+
+SELECT DISTINCT ?cp
+WHERE {
+  {
+    ?cp a arco:HistoricOrArtisticProperty ;
+        rdfs:label ?l .
+    FILTER(REGEX(?l, "Giambologna", "i"))
+    FILTER(REGEX(?l, "Bologna", "i"))
+  }
+  UNION
+  {
+    ?cp a arco:HistoricOrArtisticProperty ;
+        rdfs:label ?l .
+    FILTER(REGEX(?l, "Giambologna", "i"))
+    FILTER(REGEX(?l, "Firenze", "i"))
+  }
+}
+ORDER BY ASC(?cp)
+LIMIT 100
+
+</pre> 
+            
+			
+			<h3>Results:</h3>
+            
+         <img src="immagini/021.jpg" alt="screen" width="700"> <br> <br>
+         
+         The query works: we get a long list of results. <br>
+         
+         <strong>Some of the results show us that his works are present in other northern Italian cities too</strong>, especially in Genova. Here are some of his works kept in collections in other Italian cities:<br> <br>
+         
+         <img src="immagini/027.jpg" alt="screen" width="700"> <br> <br>
+         
+         <strong>Some very interesting results we hadn’t found before regarding our topic</strong> are the following: <br>
+         <strong><i>Statua di Nettuno di Giambologna sulla confezione di Idrolitina con zampilli d'acqua (locandina) by Majani Augusto detto Nasica (primo quarto sec. XX)</strong></i> <br><br>
+			
+			<a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0500653416">IRI Statua di Nettuno - confezione Idrolitina</a> <br><br>
+			
+			<img src="immagini/028.jpg" alt="screen" width="200"> <br> <br>
+			
+			<a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0500676528">IRI Statua di Nettuno - confezione Idrolitina (n.2)</a> <br><br>
+			
+			<img src="immagini/029.jpg" alt="screen" width="200"> <br> <br>
+			
+			<strong>These images were used to advertise the product <i>Idrolitina</i>, produced in Bologna by the company Gazzoni&C</strong>. As we learned from an article by the <a href="https://www.corriere.it/offerte-recensioni/cucina/22_settembre_15/idrolitina-dove-acquistarla-acquisti-58343.shtml ">Corriere della Sera</a>. The advertising images were created by the Bolognese artist Majani Augusto also known as Nasica.<br> <br>
+			
+			<a href="https://w3id.org/arco/resource/Agent/68c92941e00bca94adb61be986650b8a">IRI Majani Augusto</a> <br><br>
+			
+			<strong>These results confirm that Giambologna and Laureti’s work Fontana del Nettuno was also a symbol of the city in the advertising industry in the first half of the XX century</strong>.<br> <br>
+			
+			
+			<h3>QUERY 6.1</h3>
+			
+			
+			Then we decided to add the keyword <strong>OFFSET</strong> to focus on the 100 results beyond the 100 already observed to see if we can get more results linked to the city of Bologna. <br> <br>
+			
+			<pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+
+SELECT DISTINCT ?cp
+WHERE {
+  {
+    ?cp a arco:HistoricOrArtisticProperty ;
+    rdfs:label ?l .
+    FILTER(REGEX(?l, "Giambologna", "i"))
+    FILTER(REGEX(?l, "Bologna", "i"))
+  }
+  UNION
+  {
+    ?cp a arco:HistoricOrArtisticProperty ;
+    rdfs:label ?l .
+    FILTER(REGEX(?l, "Giambologna", "i"))
+    FILTER(REGEX(?l, "Firenze", "i"))
+  }
+}
+ORDER BY ASC (?cp)
+LIMIT 100
+OFFSET 100
+    </pre>
+			
+			
+			 <br>
+			 
+			 We added the keyword ORDER BY ASC in both queries to better distinguish the results given by LIMIT and OFFSET otherwise the search would be useless. <br>
+			 <strong>Again, most of the results focus on his work in Firenze and on his link to the de' Medici family. We still couldn’t find other artworks authored by Giambologna in Bologna</strong>.<br> <br>
+			 
+			<h3>QUERY 7</h3>
+            
+         We decided to run the <strong>DESCRIBE</strong> query <strong>to get a comprehensive overview of all the details associated with Giambologna in the ArCo ontology</strong>. We designed two different queries <strong>with the two different IRIs we had found for the author</strong> (the first with his Italian name, the second with the French and Italian one).<br>
+			
+			<pre>
+PREFIX agent: <https://w3id.org/arco/resource/Agent/>
+DESCRIBE agent:a17358b654a5aa1879cec8969f6b39c1
+
+    </pre>
+			
+			<h3>Results:</h3>
+			
+			<img src="immagini/030.jpg" alt="screen" width="700"> <br> <br>
+			
+			<img src="immagini/031.jpg" alt="screen" width="700"> <br> <br>
+			
+			We already knew that he lived from 1529 to 1608. <strong>He was a Flemish artist (the results say with French/Belgian nationality), mostly working with sculpture. By running this query we were able to learn about his birthplace (Douai, France) and his place of death (Firenze)</strong>. We found 3 works associated with this IRI: two of them located in Firenze and one of them is the negative of the Fontana del Nettuno analyzed above in STEP 1, QUERY 2.<br><br>
+			
+			<a href="https://w3id.org/arco/resource/PhotographicHeritage/0800633982">IRI Fontana del Nettuno (negativo)</a> <br><br>
+			
+			<h3>QUERY 7.2</h3>
+            
+         
+			<pre>
+PREFIX agent: <https://w3id.org/arco/resource/Agent/>
+DESCRIBE agent:1b6513fa0d43bfc0f98f36c6e9f5057c
+
+    </pre>
+			
+			
+			<h3>Results:</h3>
+			
+			<img src="immagini/032.jpg" alt="screen" width="700"> <br> <br>
+			
+			<img src="immagini/033.jpg" alt="screen" width="620"> <br> <br>
+			
+			In this case, we get the same information as earlier in addition to <strong>a very long list of works associated with his French name Jean de Boulogne</strong> (so it seems that he was mostly known by his French name): <br> <br>
+			
+			<img src="immagini/034.jpg" alt="screen" width="700"> <br> <br>
+			
+			However, <strong>all the works we select are either associated with the city of Firenze</strong> or with a few other Italian cities <strong>but not with Bologna</strong></strong>. <br>
+			
+			His prosperous association with the de' Medici family is made evident by the following artwork (and many others) depicting Cosimo de' Medici: <br> <br>
+			
+			<a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900293875-2">IRI Cosimo de’ Medici - Ritratto</a> <br><br>
+			
+			<img src="immagini/035.jpg" alt="screen" width="400"> <br> <br>
+			
+			
+			<h3>QUERY 8</h3>
+			
+			To be more exact we run the <strong>COUNT</strong> query: this SPARQL query <strong>is asking for the total number of cultural events in Florence that involve Giambologna as the author</strong>. <br>
+			
+			<pre>
+PREFIX cis: &lt;http://dati.beniculturali.it/cis/&gt;
+PREFIX clv: &lt;https://w3id.org/italia/onto/CLV/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT COUNT (?culturalevent ) AS ?n
+WHERE
+{
+  ?culturalevent a cis:CulturalEvent .
+  ?culturalevent cis:involvesCulturalEntity ?culturalEntity .
+  ?culturalEntity a-cd:hasAuthor ?author .
+  ?author rdfs:label ?authorlabel.
+  ?place a cis:GeographicalFeature;
+          rdfs:label "Firenze".
+  ?culturalevent clv:hasSpatialCoverage ?place.
+
+  FILTER( REGEX(?authorlabel, "Giambologna" , "i"))
+}
+</pre>
+
+         <br>
+			
+			<h3>Results:</h3> 
+			
+			<img src="immagini/036.jpg" alt="screen" width="300"> <br> 
+			
+			Instead, <strong>for Bologna the results are 0</strong>. <br>
+			Therefore, it is evident that <strong>the ArCo ontology lacks information about other works by Giambologna in Bologna</strong>. <br>
+			<strong>We decide to use the LLMS to fill this gap</strong>. <br> <br>
+			
+			
+			<h3>QUERY 9</h3>
+			
+			Before moving onto the second author of the <i>Fontana del Nettuno</i>, we want to run the query <strong>CONSTRUCT</strong>. This SPARQL CONSTRUCT query is <strong>useful for creating new RDF triples that represent information about cultural events in Florence involving Giambologna as the author</strong>.<br>
+			<strong>We tried the same query asking about cultural events in Bologna but it was empty</strong>. <br>
+			
+			<pre>
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX clv: &lt;https://w3id.org/italia/onto/CLV/&gt;
+PREFIX cis: &lt;http://dati.beniculturali.it/cis/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX l0: &lt;https://w3id.org/italia/onto/l0/&gt;
+
+CONSTRUCT {
+  ?place a cis:GeographicalFeature ; l0:name "Firenze" .
+  ?event a cis:CulturalEvent ; clv:hasSpatialCoverage ?place ; l0:name ?eventName ;
+         cis:involvesCulturalEntity ?culturalProperty .
+  ?culturalProperty a-cd:hasAuthor ?author ; l0:name ?title .
+  ?author l0:name ?authorName
+}
+WHERE {
+  ?place a cis:GeographicalFeature ; rdfs:label "Firenze" .
+  ?event a cis:CulturalEvent ; clv:hasSpatialCoverage ?place ; rdfs:label ?eventName ;
+         cis:involvesCulturalEntity ?culturalProperty .
+  ?culturalProperty a-cd:hasAuthor ?author ; rdfs:label ?title .
+  ?author rdfs:label ?authorName
+  FILTER(REGEX(?authorName, "Giambologna", "i"))
+}
+</pre>
+			
+			<br>
+			<h3>Results:</h3>
+			
+			<img src="immagini/037.jpg" alt="screen" width="700"> <br>
+			
+			<img src="immagini/038.jpg" alt="screen" width="700"> <br>
+			
+			<img src="immagini/039.jpg" alt="screen" width="700"> <br>
+			
+			<img src="immagini/040.jpg" alt="screen" width="700"> <br>
+			
+			These results are also very useful because <strong>they can serve as a base to design triples to enrich the ArCo KG at a later stage</strong>. <br>
+			
+			<br>
+			<h3>QUERY 10</h3>
+			
+			So now that we have gathered all the information there was to gather about Giambolgna (at least within the ArCo context) <strong>we want to know whether there is a resource classified as a person with a label containing Tommaso Laureti, the other author of the fountain, within the ontology</strong>.<br>
+			For this purpose, we use the <strong>QUERY ASK</strong>. <br>
+			
+			<pre>
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX cpv: &lt;https://w3id.org/italia/onto/CPV/&gt;
+
+ASK
+WHERE {
+  ?subject a cpv:Person;
+           rdfs:label ?label
+
+  FILTER(REGEX(?label, "Tommaso Laureti", "i"))
+}
+</pre>
+			
+			<br>
+			<h3>Results:</h3>
+			
+			<strong>The answer is “false”</strong>. Whereas <strong>if we try with Giambologna it gives us “true” as an answer</strong>.<br>
+			Therefore, <strong>there is another important piece of information missing</strong> in the ontology and <strong>we want to fill this gap with the help of the LLMs</strong>.<br><br>
+			
+			<a href="step1.html">STEP 1</a>   <a href="step3.html" style="display: block; text-align: right;">STEP 3</a>
+			
+			
+			
+			
+			
+			</article>								
+		</main>
+
+		<nav id="left" class="column">
+		
+		
+
+		</nav>
+
+		<div id="right" class="column">
+			
+			
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer">
+		
+		<small>questo è un progetto per UNIBO</small>
+		
+		</footer>
+	</div>
+
+</body>
+
+</html>
