@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Fontana del Nettuno</title>
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header {
+			font-size: large;
+			padding: 0.3em;
+			background: url('immagini/top01.jpg') no-repeat center center;
+			background-size: cover;
+			text-align: center;
+		}
+
+		#left {
+			background: #ffffff;
+		}
+		
+		#right {
+			background: #ffffff;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+		#footer {
+			font-size: small;
+			padding: 0.3em;
+			background: #ffffff;
+			text-align: center;
+		}
+		
+		 a {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: none; /* Remove o sublinhado, se desejar */
+  }
+       a:hover {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse, opcional */
+  }
+  
+  h2 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+
+  h3 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+    
+    
+	</style>
+	
+	
+</head>
+
+<body>
+
+	<header id="header">
+	
+	<h1 style="color: white;">Bologna’s <i>Fontana del Nettuno</i>:</h1>
+	<p style="color: white;">A symbol of the city and a collaborative effort by Giambologna and Tommaso Laureti</p>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+
+</header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<article>
+			
+	<ul>
+				<a href="index.html">Home</a>
+				<a href="methodology.html">Methodology</a>
+				<a href="projectsteps.html">Project steps</a>
+				<a href="discussion.html">Discussion and Conclusion</a>
+			</ul>			
+			
+				<h2>STEP 1 - Finding the Fontana del Nettuno in ArCo and gathering information about it</h2>
+	       
+            <h3>QUERY 1</h3>
+            
+            First of all, we used this query to check <strong> whether there is an entity in ArCo </strong> representing this artwork.
+            
+           <pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+
+SELECT DISTINCT ?cp
+WHERE {
+?cp a arco:HistoricOrArtisticProperty ;
+rdfs:label ?l .
+FILTER(REGEX(?l, "Fontana del Nettuno", "i"))
+
+}
+
+</pre>
+
+
+
+          <li>The keyword <strong> DISTINCT </strong> serves to eliminate duplicates. </li> 
+          <li><strong>FILTER</strong> and <strong>REGEX</strong> are useful keywords <strong> to get more specific information about our topic:</strong> the FILTER keyword in SPARQL is used to filter the results based on certain conditions. It allows you to specify a condition that must be met for a result to be included. The REGEX function is used to perform regular expression matching on the specified string. </li> 
+          
+
+          <h3>Results:</h3>
+          We got 8 results. So we are sure <strong> there are entities representing our artwork in ArCo.</strong> <br> <br>
+          <img src="immagini/02.jpg" alt="screen" width="400">
+          
+			<h3>Analysis:</h3>
+         We get 5 relevant results as the last 2 talk about the Fontana del Nettuno in Trento and in Firenze and the 3rd one about the one in Napoli. However it is useful to know that the same subject is present in other Italian cities too. 
+So the results regarding our topic show us different representations of the artwork:<br> A print of <strong>Anselmo Bucci’s drawing of the fountain with his signature in 1925.</strong><br> <br>
+           
+         <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0300639021">IRI Stampa</a> <br> <br>
+         
+         <img src="immagini/03.jpg" alt="screen" width="400"> <br> <br>
+         
+         The above result is interesting because it shows us that <strong>iconic artists</strong> such as Anselmo Bucci <strong>were inspired to draw Bologna’s fountain.</strong> <br> <br>
+         
+         <a href="https://w3id.org/arco/resource/Agent/776d15d66d81b2c600552831ddde5f86">IRI Anselmo Bucci</a> <br> <br>
+         
+         <strong><i>La Fontana del Nettuno a Bologna con passanti e piccioni (manifesto) di Dudovich Marcello (sec. XX).</i></strong> <br> <br>
+         
+         <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0500668388">IRI Manifesto</a> <br> <br>
+         
+         This is an important result because it allows us to understand that the fountain has always been <strong>a symbolic element of the city</strong> of Bologna, as this poster was used to advertise the <i>Esposizione dell’Industria Italiana per il Materiale Turistico</i> taking place in Bologna in 1904. It also reveals the importance of this artwork in the context of tourism. <br> <br>
+         
+         <img src="immagini/04.jpg" alt="screen" width="400"> <br> <br>
+         
+         <strong><i>La fontana del Nettuno, fontana della vita (disegno) by Boulogne Jean detto Giambologna (attribuito) (secc. XVI/ XVII).</strong></i> This result shows us a drawing of the fountain by Giambologna, the author of the artwork himself, dated 1570-1608. <br> <br>
+         
+         <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/1600105106">IRI Disegno</a> <br> <br>
+         
+         <img src="immagini/05.jpg" alt="screen" width="400"> <br> <br>
+         
+         <strong><i>La fontana del Nettuno, stemma del comune di Bologna (Scultura, opera isolata) - produzione bolognese (prima metà sec. XX).</strong></i> <br>
+         
+         This is a smaller-scale reproduction of the Neptune Fountain, given to Prince of Piedmont Umberto di Savoia on the occasion of his visit to Bologna in 1933. <br> <br>
+         
+         <a href="https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0100405064.html">IRI Scultura</a> <br> <br>
+          
+         <img src="immagini/06.jpg" alt="screen" width="400"> <br> <br>
+         
+         Description: <br> 
+         
+         <img src="immagini/07.jpg" alt="screen" width="700"> <br> <br>
+         
+         The above result provides an accurate description of the <strong>sculptural elements of the statue</strong>, as well as the <strong>material and technique</strong> (in particular <strong>bronze/casting and marble</strong>) with which it was constructed, which are <strong>the same as those used by Giambologna and Laureti in the 16th century</strong> (as the website of the <a href="http://nettuno.comune.bologna.it/storia/">Comune di Bologna</a> tells us). However, the author of this reproduction is not given.<br>
+          
+         <img src="immagini/08.jpg" alt="screen" width="700"> <br> <br>
+         
+         It also provides historical information that confirms <strong>the significance of the Neptune Fountain to the image of the city</strong> of Bologna. It  also reveals <strong>all the authors</strong> of the artwork and mentions the fact that <strong>the work was finished in 1566</strong>.<br> <br>
+         
+         Historical information: <br>
+         
+         <img src="immagini/09.jpg" alt="screen" width="700"> <br> <br>
+         
+         <strong><i>Bologna. La Piazza Maggiore con la fontana del Nettuno, veduta di piazza (stampa) - ambito italiano (sec. XIX)</strong></i><br> <br>
+         
+         <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/1400042198">IRI Stampa</a> <br> <br>
+         
+         <img src="immagini/010.jpg" alt="screen" width="400"> <br> <br>
+         
+         The last selected result shows a print of the view of Piazza Maggiore together with the Neptune Fountain, dated 1875. It is the first result that gives us <strong>a broader representation of the fountain's surroundings</strong>, once again emphasizing its importance as a symbolic element of the city. <br> <br>
+         
+         <h3>QUERY 2</h3> <br>
+         
+         Then, we used the following query to find <strong>more material</strong> about the Fontana del Nettuno. In fact,  this query is searching for unique resources that are classified as "Subjects" (according to the ArCo ontology) and have <strong>a name or title that includes the phrase "Fontana del Nettuno"</strong>.
+         
+         <pre>
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+
+SELECT DISTINCT ?subject ?label
+WHERE {
+  ?subject a a-cd:Subject ;
+           rdfs:label ?label .
+ 
+  FILTER (REGEX(?label, "Fontana del Nettuno", "i"))
+}
+
+</pre>
+         
+         <h3>Results:</h3>
+         We obtain 10 results, most of which are the same as those obtained with QUERY 1 and the others are not related to the city of Bologna. We then select the 2 most relevant ones.<br>
+         
+         <h3>Analysis:</h3>
+         
+         <strong><i>Fontana del Nettuno/ Bologna (diapositiva) by Giambologna, Istituto Minerva (XX)</strong></i> 
+         <br> This is a diapositive that captures a frontal view of the fountain; it’s dated 1912-1914. <br> <br>
+
+         <img src="immagini/01.jpg" alt="screen" width="400"> <br> <br>
+         
+         <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800365640">IRI (Diapositiva)</a> <br> <br>
+         
+         <strong><i>Fontana del Nettuno (negativo) by Anonimo, Giambologna (XX)</strong></i> 
+         <br> This is a negative that captures the view of Neptune Square from the corner of Palazzo Re Enzo. It is dated 1912. <br> <br>
+         
+         <img src="immagini/011.jpg" alt="screen" width="400"> <br> <br>
+         
+         <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800633982">IRI (Negativo)</a> <br> <br>
+         
+         These two results are the first <strong>photographic representations</strong> we obtained of the artwork. <br>
+         Moreover, from the second result we were able to retrieve <a href="https://w3id.org/arco/resource/Agent/a17358b654a5aa1879cec8969f6b39c1">Giambologna’s IRI:</a> <br> <br>
+         
+         <h3>QUERY 3</h3> <br>
+         
+         We then ran the queries below in order <strong>to find properties and values associated with our chosen artwork</strong> in the ArCo ontologies. In addition, identifying properties and values can help us at a later stage to design the triples we need.<br> <br>
+         The <i>Fontana del Nettuno</i> is present in other cities in Italy too, so <strong> we added the FILTER “Bologna”</strong> and noticed that by doing so the query gave us <strong>more accurate results</strong> on our topic: <br>
+         
+         <pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX cis: &lt;http://dati.beniculturali.it/cis/&gt;
+
+SELECT DISTINCT ?property ?value
+WHERE {
+
+  ?cp a arco:HistoricOrArtisticProperty ;
+      rdfs:label ?l ;
+      ?property ?value .
+  FILTER(REGEX(?l, "Fontana del Nettuno", "i"))
+  FILTER(REGEX(?l, "Bologna", "i"))
+}
+
+</pre>
+
+
+         <h3>QUERIES 3.1 AND 3.2</h3> <br>
+         We decided to add the keyword <strong>ORDER BY SORT</strong> in order to better sort our results. <br>
+         We started by <strong>sorting the results according to properties</strong>. First <strong>in a descending manner</strong>. <br>
+         
+         <pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX cis: &lt;http://dati.beniculturali.it/cis/&gt;
+
+SELECT DISTINCT ?property ?value
+WHERE {
+
+  ?cp a arco:HistoricOrArtisticProperty ;
+      rdfs:label ?l ;
+      ?property ?value .
+  FILTER(REGEX(?l, "Fontana del Nettuno", "i"))
+  FILTER(REGEX(?l, "Bologna", "i"))
+}
+ORDER BY DESC(?property)
+LIMIT 100
+
+</pre>
+
+          <br>Then <strong>in an ascending manner</strong>. <br><br>
+         
+          <pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX cis: &lt;http://dati.beniculturali.it/cis/&gt;
+
+SELECT DISTINCT ?property ?value
+WHERE {
+
+  ?cp a arco:HistoricOrArtisticProperty ;
+      rdfs:label ?l ;
+      ?property ?value .
+  FILTER(REGEX(?l, "Fontana del Nettuno", "i"))
+  FILTER(REGEX(?l, "Bologna", "i"))
+}
+ORDER BY ASC(?property)
+LIMIT 100
+
+</pre>
+         
+
+
+          <br> Since we initially got a large amount of results, we decided to add the keyword <strong>LIMIT</strong> to the above queries. <br><br>
+          
+          <h3>Results:</h3> 
+          
+          Interesting <strong>PROPERTIES</strong> found of the artworks representing Bologna’s Fontana del Nettuno: <br> <br>
+          Geometry, location, cultural institute or site, it has a technical aspect, it has a shape, it has measurement collection, it has material or technique (typical of cultural goods), it is a type of cultural property, it has a conservation status, it has affixed elements, it presents documentation, dating, bibliography, authorship attribution, it is described by catalogue record, it has material (black marble, bronze and casting). <br> <br>
+          
+          <h3>QUERY 3.3 AND 3.4</h3> <br>
+          
+          We then <strong>sorted our results according to values</strong>. First <strong>in a descending manner:</strong> <br>
+          
+          <pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX cis: &lt;http://dati.beniculturali.it/cis/&gt;
+
+SELECT DISTINCT ?property ?value
+WHERE {
+
+  ?cp a arco:HistoricOrArtisticProperty ;
+      rdfs:label ?l ;
+      ?property ?value .
+  FILTER(REGEX(?l, "Fontana del Nettuno", "i"))
+  FILTER(REGEX(?l, "Bologna", "i"))
+}
+ORDER BY DESC(?value)
+
+</pre>
+          
+         <br> Then <strong>in an ascending manner:</strong> <br> <br>
+         
+         <pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+PREFIX cis: &lt;http://dati.beniculturali.it/cis/&gt;
+
+SELECT DISTINCT ?property ?value
+WHERE {
+
+  ?cp a arco:HistoricOrArtisticProperty ;
+      rdfs:label ?l ;
+      ?property ?value .
+  FILTER(REGEX(?l, "Fontana del Nettuno", "i"))
+  FILTER(REGEX(?l, "Bologna", "i"))
+}
+ORDER BY ASC(?value)
+
+
+</pre>
+
+
+         <h3>Results:</h3> <br>
+        
+         Interesting <strong>VALUES</strong> found of the artworks representing our topic: <br> <br>
+         
+         <li><a href="https://w3id.org/arco/resource/TimeIndexedTypedLocation/1600105106-current ">w3id.org/arco/resource/TimeIndexedTypedLocation/1600105106-current </a> </li>
+         = Actual localization of the cultural good.
+         <li>Technical characteristics: glaze, rectangular geometry, drypoint, black marble.</li> 
+         <li>Photographic documentations of the fountain (the pictures we have already found).</li>
+         <li>Measurement collection: height 316 width 227 🡪</li>
+         <a href="https://w3id.org/arco/resource/MeasurementCollection/1600105106-1">w3id.org/arco/resource/MeasurementCollection/1600105106-1</a>
+         <li>Legal situation: state propriety and public territorial propriety.</li>
+         <li>Cultural property type: sculpture.</li>
+         <a href="https://w3id.org/arco/resource/CulturalPropertyType/e0f85950871864ae68bbd52aa767ef8c">w3id.org/arco/resource/CulturalPropertyType/e0f85950871864ae68bbd52aa767ef8c</a>
+         <li>Conservation of the monument: good status of conservation 🡪 </li>
+         <a href="https://w3id.org/arco/resource/ConservationStatus/0100405064-conservation-status-1">w3id.org/arco/resource/ConservationStatus/0100405064-conservation-status-1</a>
+         <li>Catalogo dei beni culturali:</li>
+         <a href="https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1600105106">catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1600105106</a> <br> <br>
+         
+         <img src="immagini/012.jpg" alt="screen" width="700"> <br> <br>
+         
+         <a href="https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0100405064">https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0100405064</a> <br> <br>
+         
+         <img src="immagini/013.jpg" alt="screen" width="700"> <br> <br>
+         
+         
+         <h3>QUERY 4 </h3> <br>
+         
+         We ran the query with the <strong>keyword OPTIONAL</strong> in order<strong> to find further depictions and representations of our artwork</strong>. In the following query we also removed DISTINCT and let the <br>
+         
+         * instead in order to get all possible results. 
+         
+         <pre>
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
+PREFIX a-cd: &lt;https://w3id.org/arco/ontology/context-description/&gt;
+
+SELECT *
+WHERE {
+
+  ?cp a arco:HistoricOrArtisticProperty ;
+      rdfs:label ?l .
+  FILTER(REGEX(?l, "Fontana del Nettuno", "i"))
+  FILTER(REGEX(?l, "Bologna", "i"))
+  OPTIONAL { ?culturalProperty a-cd:depiction ?depiction }
+}
+
+
+</pre>
+
+
+          <h3>Results:</h3> <br>
+        
+          By running the query above we get 10 results, however, <strong> all the depictions we get are the ones we have already analyzed </strong>above.  <br>
+          <strong>The same happens if we change the query and ask with the OPTIONAL block about the material, technique, or legal situation of the artwork</strong>. <br>
+          We can therefore assume that <strong>we have gathered enough information about the <i>Fontana del Nettuno</i></strong> in Bologna and <strong>can move on searching for information about its creators</strong>. <br>
+          
+          
+          <a href="step2.html" style="display: block; text-align: right;">STEP 2</a>
+
+         
+              
+
+
+			
+			</article>								
+		</main>
+
+		<nav id="left" class="column">
+		
+		
+
+		</nav>
+
+		<div id="right" class="column">
+			
+			
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer">
+		
+		<small>questo è un progetto per UNIBO</small>
+		
+		</footer>
+	</div>
+
+</body>
+
+</html>
