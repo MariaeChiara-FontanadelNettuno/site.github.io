@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Fontana del Nettuno</title>
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header {
+			font-size: large;
+			padding: 0.3em;
+			background: url('immagini/top01.jpg') no-repeat center center;
+			background-size: cover;
+			text-align: center;
+		}
+
+		#left {
+			background: #ffffff;
+		}
+		
+		#right {
+			background: #ffffff;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+		#footer {
+			font-size: small;
+			padding: 0.3em;
+			background: #ffffff;
+			text-align: center;
+		}
+		
+		 a {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: none; /* Remove o sublinhado, se desejar */
+  }
+       a:hover {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse, opcional */
+  }
+  
+  h2 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+
+  h3 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+    
+    
+	</style>
+	
+	
+</head>
+
+<body>
+
+	<header id="header">
+	
+	<h1 style="color: white;">Bologna’s <i>Fontana del Nettuno</i>:</h1>
+	<p style="color: white;">A symbol of the city and a collaborative effort by Giambologna and Tommaso Laureti</p>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<article>
+			
+	<ul>
+				<a href="index.html">Home</a>
+				<a href="methodology.html">Methodology</a>
+				<a href="projectsteps.html">Project steps</a>
+				<a href="discussion.html">Discussion and Conclusion</a>
+			</ul>			
+			
+				<h2>Discussion: problems encountered and solutions applied; lessons learned</h2>
+	       
+            <h3>Problems encountered and solutions applied</h3>
+            
+            <li>General problems at the beginning of the project: there was the necessity to follow tutorials on <strong>the functioning of SPARQL and the queries</strong> to be able to use them correctly. After <strong>becoming familiar with the queries and the keywords</strong>, we were able to find the information we needed in ArCo.</li>
+            <li>Prompting techniques: after <strong>studying the engineering of prompts for the language models</strong>, we tried various techniques in order to improve the efficiency of the language models, as sometimes they could not find the information we needed.</li><br>
+            <li><strong>Since the topic </strong>we chose <strong>concerns a public monument, we were only able to find artistic representations of it</strong> (drawings, posters, photos). However, this turned out to be an interesting take on the topic, as it made us realize <strong>the significance of the artwork for the image of the city</strong> of Bologna. </li><br>
+            
+            <h3>Lessons learned</h3>
+            
+            <li>After learning to use SPARQL, we noticed that <strong>the queries are useful tools</strong> that allow us to find material about every topic connected to the Italian cultural heritage we seek in ArCo, which is full of information on it. </li>
+            <li><strong>Keywords</strong>: an efficient tool to <strong>improve the quality of our research</strong>, as they refine the query.</li>
+            <li>We learned that <strong>the query CONSTRUCT is one of the most useful queries</strong>, thanks to its importance <strong>for the building of triples</strong>, and because it contains a lot of information in a single file.</li><br>
+            
+            <li><strong>The Language Models perform better through the prompting techniques</strong>. We learned that <strong>through examples, inputs and precise questions</strong> they can give us interesting results. Moreover, when building a conversation with them, it is interesting to see that by changing the wording of the sentence or repeating the same question through other perspectives they change their answers. We learned how to use them correctly. </li>
+            <li>However, we also noticed that they could not find the fourth committent of the Neptune Fountain. In fact, even if we have used the few-shot prompting technique correctly, the fourth name was not given. So, <strong>when looking for very specific information, the LLMs do not always provide the correct answer</strong>.</li>
+            <li>Moreover, we noticed that <strong>ChatGPT keeps track of the old questions</strong> even days later, while <strong>Gemini needs more inputs to reach the correct functioning</strong>, because at the beginning it gives confused and inaccurate results.</li><br>
+            
+            <h3>Conclusion and possible future development</h3>
+            
+            <li>The <strong>results given by the Language Models need to be checked</strong> for accuracy and their efficiency can be improved.</li>
+            <li><strong>ArCo could be enriched with new information about the Neptune Fountain</strong>, Tommaso Laureti and its committents. After filling these information gaps in ArCo, it would be possible <strong>to complete the triples we designed on the Neptune Fountain</strong>.</li>
+            <li>The <strong>ArCo</strong> ontology <strong>could</strong> also <strong>be enriched with more recent representations of the Neptune Fountain</strong>, as most of the ones we found were dating back to either the XVI (the century in which the authors Giambologna and Laureti lived) or to the XX century (e.g. the advertising posters). </li>
+            
+            
+            
+			
+			
+			</article>								
+		</main>
+
+		<nav id="left" class="column">
+		
+		
+
+		</nav>
+
+		<div id="right" class="column">
+			
+			
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer">
+		
+		<small>questo è un progetto per UNIBO</small>
+		
+		</footer>
+	</div>
+
+</body>
+
+</html>
