@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Fontana del Nettuno</title>
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header {
+			font-size: large;
+			padding: 0.3em;
+			background: url('immagini/top01.jpg') no-repeat center center;
+			background-size: cover;
+			text-align: center;
+		}
+
+		#left {
+			background: #ffffff;
+		}
+		
+		#right {
+			background: #ffffff;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+		#footer {
+			font-size: small;
+			padding: 0.3em;
+			background: #ffffff;
+			text-align: center;
+		}
+		
+		 a {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: none; /* Remove o sublinhado, se desejar */
+  }
+       a:hover {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse, opcional */
+  }
+  
+  h2 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+
+  h3 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+    
+    
+	</style>
+	
+	
+</head>
+
+<body>
+
+	<header id="header">
+	
+	<h1 style="color: white;">Bologna’s <i>Fontana del Nettuno</i>:</h1>
+	<p style="color: white;">A symbol of the city and a collaborative effort by Giambologna and Tommaso Laureti</p>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+   
+
+</header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<article>
+			
+	<ul>
+				<a href="index.html">Home</a>
+				<a href="methodology.html">Methodology</a>
+				<a href="projectsteps.html">Project steps</a>
+				<a href="discussion.html">Discussion and Conclusion</a>
+			</ul>			
+			
+				<h2>STEP 4 - Designing triples</h2>
+	       
+            <h3>STEP 4.1 - Triples based on ArCo</h3>
+            
+            We decided to design <strong>triples based on the most important information about our topic</strong>, retrieved through searching <strong>the ArCo ontology</strong>.<br>
+            We also created them as a way to practice and <strong>understand how to design triples in order to design new ones</strong> later.<br>
+            In addition, the following triples are <strong>useful for finding the most relevant properties and values of our artwork</strong> without having to run a SPARQL query again. <br><br>
+            
+            
+            <h3>TRIPLES - SET 1</h3>
+            
+            <strong>Since the Neptune Fountain in Bologna is a public monument, we were only able to find representations of it</strong>. <br>
+            For this reason, in the following series of triples, we chose the IRI of <strong>a photo of the fountain</strong>, as it is <strong>one of the closest representations of the artwork</strong> we could find.<br><br>
+            
+            <strong>riple 1 – a-cd:hasAuthor</strong><br>
+            Subject: <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800633982 ">https://w3id.org/arco/resource/PhotographicHeritage/0800633982  </a><br>
+            Predicate: hasAuthor<br>
+            Object (Giambologna): <a href="https://w3id.org/arco/resource/Agent/a17358b654a5aa1879cec8969f6b39c1 ">https://w3id.org/arco/resource/Agent/a17358b654a5aa1879cec8969f6b39c1  </a><br><br>
+            
+            <strong>Triple 2 – a-cd:hasSubject</strong><br>
+            Subject: <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800633982 ">https://w3id.org/arco/resource/PhotographicHeritage/0800633982  </a><br>
+            Predicate: hasSubject <br>
+            Object (Fontana del Nettuno - photographic representation): <a href="https://w3id.org/arco/resource/Subject/1c81f0efabe53549630809ab6fd79047">https://w3id.org/arco/resource/Subject/1c81f0efabe53549630809ab6fd79047 </a><br><br>
+            
+            <strong>Triple 3 – a-cd:hasTitle</strong><br>
+            Subject: <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800633982 ">https://w3id.org/arco/resource/PhotographicHeritage/0800633982 </a><br>
+            Predicate: hasTitle <br>
+            Object: <a href="https://w3id.org/arco/resource/Title/0800633982-palazzo-re-enzo-il-cortile-visto-da-piazza-nettuno">https://w3id.org/arco/resource/Title/0800633982-palazzo-re-enzo-il-cortile-visto-da-piazza-nettuno  </a> <br><br>
+            
+            
+            <h3>TRIPLES - SET 2</h3>
+            
+            The following set of triples is useful for representing and finding information about <strong>the material and technique of the chosen artwork</strong>. We chose the IRI of the artwork below because it is <strong>a close reproduction of the fountain</strong>: a sculpture made with the same material and technique. In this case, however, the author has not been indicated.<br><br>
+            
+            
+            <strong>Triple 1 - a-cd:hasSubject</strong><br>
+            Subject: <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100405064 ">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100405064 </a><br>
+            Predicate: hasSubject<br>
+            Object: <a href="https://w3id.org/arco/resource/Subject/6c9ec01a3005c6c6ca0670bba6ce30b1 ">https://w3id.org/arco/resource/Subject/6c9ec01a3005c6c6ca0670bba6ce30b1 </a><br><br>
+            
+            <strong>Triple 2 - a-dd:hasMaterialOrTechnique</strong><br>
+            Subject: <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100405064">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100405064 </a><br>
+            Predicate: hasMaterialOrTechnique<br>
+            Object: <a href="https://w3id.org/arco/resource/TechnicalCharacteristic/bronzo-fusione">https://w3id.org/arco/resource/TechnicalCharacteristic/bronzo-fusione </a><br><br>
+            
+            
+            <h3>TRIPLES - SET 3</h3>
+            The following set of triples is useful for finding properties and values of one of the most interesting representations of the Neptune fountain we have found in ArCo. Indeed, this <strong>20th-century advertising poster</strong> emphasizes the <strong>symbolic significance of the artwork for the city of Bologna</strong>.<br><br>
+            
+            <strong>Triple 1 - a-cd:hasSubject</strong><br>
+            Subject: <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0500676528">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0500676528 </a><br>
+            Predicate: hasSubject<br>
+            Object (Statua di Nettuno di Giambologna sulla Confezione di Idrolitina con Zampilli d’Acqua): <a href="https://dati.beniculturali.it/lodview-arco/resource/Subject/b2095bc2407f1f4e7a002f1324897da9">https://dati.beniculturali.it/lodview-arco/resource/Subject/b2095bc2407f1f4e7a002f1324897da9 </a><br><br>
+            
+            <strong>Triple 2 - a-dd:hasCulturalPropertyType</strong><br>
+            Subject: <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0500676528">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0500676528 </a><br>
+            Predicate: hasCulturalPropertyType<br>
+            Object (manifesto pubblicitario): <a href="https://dati.beniculturali.it/lodview-arco/resource/CulturalPropertyType/33d58e4a833816969251025527426665">https://dati.beniculturali.it/lodview-arco/resource/CulturalPropertyType/33d58e4a833816969251025527426665</a><br><br>
+            
+            
+            <h3>TRIPLES - SET 4</h3>
+            
+            The following set of triples is useful for finding information about <strong>Jean de Boulogne known as Giambologna, the main author of the fountain</strong> and two of his works preserved in Firenze (we know for a fact that he was most active there). <br>
+            We used the IRI below (the one with the French name) because it is related to most of his artworks in the ArCo ontology. The other IRI, the one with the Italian name Giambologna, is linked to a smaller number of works.<br><br>
+            
+            <strong>Triple 1 – a-cd:hasAuthor</strong><br>
+            Subject (Oceano): <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286790">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286790 </a><br>
+            Predicate: hasAuthor<br>
+            Object (Jean de Boulogne): <a href="https://w3id.org/arco/resource/Agent/1b6513fa0d43bfc0f98f36c6e9f5057c">https://w3id.org/arco/resource/Agent/1b6513fa0d43bfc0f98f36c6e9f5057c </a><br><br>
+            
+            <strong>Triple 2 – a-cd:hasAuthor</strong><br>
+            Subject (Testa di Vecchio): <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900382260">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900382260 </a><br>
+            Predicate: hasAuthor<br>
+            Object (Jean de Boulogne): <a href="https://w3id.org/arco/resource/Agent/1b6513fa0d43bfc0f98f36c6e9f5057c">https://w3id.org/arco/resource/Agent/1b6513fa0d43bfc0f98f36c6e9f5057c</a><br><br>
+            
+            
+            <h3>STEP 4.2 - Triples to enrich ArCo</h3>
+            
+            We then tried to design <strong>new triples based on the information extracted from the LLMs</strong>.<br>
+            
+            As pointed out earlier, we noted that the most relevant details with which <strong>to enrich the ArCo KG</strong> are: <br>
+            
+            - <strong>who commissioned the Neptune Fountain</strong> (we focused on the main patrons mentioned by the LLMs: Pope Pius IV and the Bolognese Senate);<br>
+            
+            - information about <strong>the architect Tommaso Laureti</strong>, the second author of the fountain;<br>
+            
+            - <strong>other works by Giambologna preserved in Bologna</strong> (the most important of which is the statue of Mercurio).<br>
+            
+            Again, we took the photo <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800633982">(Negativo) by Anonimo</a> as a representation of the fountain (as subject/object), as it is one of the closest representation to the artwork we have found.<br><br>
+            
+            
+            <h3>POPE COMMISSION - HasCommittent triple</h3>
+            
+            Subject: <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800365640">https://w3id.org/arco/resource/PhotographicHeritage/0800365640</a><br>
+            Predicate: a-cd:HasCommittent<br>
+            Object: Pope Pius IV (IRI - needs to be created, not present in ArCo)<br><br>
+            
+            
+            <h3>BOLOGNESE SENATE COMMISSION - HasCommittent triple</h3>
+            
+            Subject: <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800365640">https://w3id.org/arco/resource/PhotographicHeritage/0800365640</a><br>
+            Predicate: a-cd:HasCommittent<br>
+            Object: Bolognese Senate (IRI - needs to be created, not present in ArCo)<br><br>
+            
+            
+            <h3>TOMMASO LAURETI - HasAuthor triple</h3>
+            
+            Subject: <a href="https://w3id.org/arco/resource/PhotographicHeritage/0800365640">https://w3id.org/arco/resource/PhotographicHeritage/0800365640</a><br>
+            Predicate: a-cd:HasAuthor<br>
+            Object: Tommaso Laureti (IRI - needs to be created, not present in ArCo)<br><br>
+            
+            
+            <h3>MERCURIO - HasAuthor triple</h3>
+            
+            Subject: Mercurio (HistoricOrArtisticProperty) - (IRI - needs to be created, not present in ArCo)<br>
+            Predicate: a-cd:HasAuthor<br>
+            Object (Giambologna): <a href="https://w3id.org/arco/resource/Agent/a17358b654a5aa1879cec8969f6b39c1">https://w3id.org/arco/resource/Agent/a17358b654a5aa1879cec8969f6b39c1</a><br><br><br>
+            
+            <a href="step3.html">STEP 3</a>
+            
+        
+        
+			
+			
+			
+			</article>								
+		</main>
+
+		<nav id="left" class="column">
+		
+		
+
+		</nav>
+
+		<div id="right" class="column">
+			
+			
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer">
+		
+		<small>questo è un progetto per UNIBO</small>
+		
+		</footer>
+	</div>
+
+</body>
+
+</html>
