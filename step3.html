@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Fontana del Nettuno</title>
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header {
+			font-size: large;
+			padding: 0.3em;
+			background: url('immagini/top01.jpg') no-repeat center center;
+			background-size: cover;
+			text-align: center;
+		}
+
+		#left {
+			background: #ffffff;
+		}
+		
+		#right {
+			background: #ffffff;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+		#footer {
+			font-size: small;
+			padding: 0.3em;
+			background: #ffffff;
+			text-align: center;
+		}
+		
+		 a {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: none; /* Remove o sublinhado, se desejar */
+  }
+       a:hover {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse, opcional */
+  }
+  
+  h2 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+
+  h3 {
+    color: #cc0000; /* Substitua pelo código da cor desejada */
+  }
+    
+    
+	</style>
+	
+	
+</head>
+
+<body>
+
+	<header id="header">
+	
+	<h1 style="color: white;">Bologna’s <i>Fontana del Nettuno</i>:</h1>
+	<p style="color: white;">A symbol of the city and a collaborative effort by Giambologna and Tommaso Laureti</p>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<article>
+			
+	<ul>
+				<a href="index.html">Home</a>
+				<a href="methodology.html">Methodology</a>
+				<a href="projectsteps.html">Project steps</a>
+				<a href="discussion.html">Discussion and Conclusion</a>
+			</ul>			
+			
+				<h2>STEP 3 - Using LLMs to produce new knowledge</h2>
+	       
+            <h3>Prompt 1</h3>
+            
+            <strong>First of all, we needed a description of the Fontana del Nettuno, to get more historical information and details about it</strong>. <br>
+            We tried to use the <strong>zero-shot prompting technique</strong> by asking: <br><br>
+            <i>Could you give me a brief description of the “Fontana del Nettuno” in Bologna, one of Giambologna’s artworks, containing historical information and some details about it?</i> <br><br>
+            According to this technique, <strong>the prompt contains no examples or demonstrations</strong>, and in this case we can use it because to get more information about our topic we do not need to explain anything.<br>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/041.jpg" alt="screen" width="700"> <br> <br>
+            
+            <img src="immagini/042.jpg" alt="screen" width="700"> <br> <br>
+            
+            <img src="immagini/043.jpg" alt="screen" width="700"> <br> <br>
+            
+            <img src="immagini/044.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>Analysis:</h3>
+            
+            <li>So <strong>both Gemini and ChatGPT agree on the fact that the fountain has been a symbol of the city of Bologna since its creation</strong> and that’s also something we could verify with our previous results.</li> 
+            <li><strong>ChatGPT gives a more accurate description of the elements of the fountain and their meaning</strong> (for example, the four cherubic figures representing four important rivers of the world). It also tells us about the height of the Neptune statue (3.2 meters) and the material the fountain is made of (bronze and marble). It also defines Giambologna’s style as Mannerist. Gemini, on the other hand, gives us some details but, all in all, it provides a less accurate description of the artwork.</li> 
+            <li><strong>Both LLMs agree on the fact that the fountain is a symbol of the power of papacy</strong> and of the city’s allegiance to the Papal States, which is a new important detail for us.</li>
+            <li>They both agree on the fact that <strong>the fountain was commissioned in 1563</strong>.</li>  
+            <li><strong>Gemini provides us with the start and completion date of the work</strong>. However, we wanted to verify this data and according to this article of <a href="https://www.turismo.it/cultura/articolo/art/cosa-nasconde-la-fontana-del-nettuno-simbolo-di-bologna-id-21111/#:~:text=Era%20il%201563%20e%20il,della%20fontana%2C%20completata%20nel%201566">LA STAMPA </a> <strong>the true completion date of the work would be 1566 (and not 1567). Therefore Gemini is not correct</strong>. </li> 
+            <li><strong>They both provide some information on who commissioned the fountain</strong>. And they’re both right, in the sense that the fountain was commissioned by the Pope, by the Bolognese Senate (Gemini) and by the legate Cardinal Borromeo (ChatGPT). </li> 
+            <li><strong>However</strong>, according to the website of the <a href="http://nettuno.comune.bologna.it/storia/ ">Comune di Bologna </a> <strong>the creation of the statue was also wanted by the vicelegate Cardinal Pier Donato Cesi</strong>, who promoted the architectural renovation of the center of Bologna. <strong>So there is an important name missing: let’s see if we can get his name</strong> by further questioning the LLMs. </li> <br> 
+            
+            <h3>Prompt 2</h3>
+            
+            We wanted <strong>to get information about Tommaso Laureti</strong>, the other author of the fountain, <strong>as he is not present in ArCo</strong>. We used the <strong>self-consistency prompting technique</strong> to ask the LLMs information <strong>on the commission of the fountain</strong> and on who participated in the project.<br><br>
+            
+            We tried to use this technique <strong>to build a continuity of discourse, allowing LLMs to follow the various steps we provided them with (Q1, Q2, Q3)</strong>. In this way we always repeated the first part of the question, modifying only the last part.<br><br>
+            
+            
+            The first question was: <br>
+            <i>Q: Who built the Neptune Fountain in Bologna?</i><br>
+            <i>A: The Neptune Fountain in Bologna was built by Jean de Boulogne, called Giambologna</i>.<br>
+            <i>Q1: Who participated in the project of the Neptune Fountain together with Giambologna?</i><br><br>
+            
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/045.jpg" alt="screen" width="700"> <br> <br>
+            <img src="immagini/046.jpg" alt="screen" width="700"> <br> <br>
+            
+            
+            
+            <h3>ChatGPT:</h3>
+            
+            <img src="immagini/047.jpg" alt="screen" width="700"> <br> <br>
+            
+            
+            <h3>Analysis:</h3>
+            
+            <li>It is evident that <strong>Gemini couldn’t give us the correct answer at the first try</strong> and gave us very confused results.</li>
+            <li><strong>ChatGPT was more accurate and gave us the name of Tommaso Laureti and a brief description of his role in the creation of the fountain</strong>. He was indeed the architect of the fountain, as the website of the <a href="http://nettuno.comune.bologna.it/storia/">Comune di Bologna </a> confirms.</li>
+            <li><strong>ChatGPT also provided us with the name of the Pope, Pope Pius IV, who commissioned the artwork</strong>.</li>
+            
+            <h3>Prompt 2.1</h3>
+            
+            Since Gemini couldn’t give us the correct answer at the first try, <strong>we tried with a different wording</strong>: <br>
+            <i>Q: Who built the Neptune Fountain in Bologna?</i><br>
+            <i>A: The Neptune Fountain in Bologna was built by Jean de Boulogne, called Giambologna.</i><br>
+            <i>Q1: Who else participated in designing the Neptune Fountain in Bologna?</i><br><br>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/048.jpg" alt="screen" width="650"> <br> <br>
+            
+            <h3>Analysis:</h3>
+             
+            <li>This time, <strong>by insisting and changing the wording, Gemini was able to give us the correct answer</strong>.</li> <br>
+            
+            <h3>Prompt 2.2</h3>
+            
+            We used Prompt 2.2 in order to better train the LLMs and also <strong>to get further information on the commission of the fountain</strong>:<br>
+            <i>Q: Who built the Neptune Fountain in Bologna?</i><br>
+            <i>A: The Neptune Fountain in Bologna was built by Jean de Boulogne, called Giambologna.</i><br>
+            <i>Q2: Why did they build the Neptune Fountain in Bologna? Be precise.</i><br><br>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/049.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>ChatGPT:</h3>
+            
+            <img src="immagini/050.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>Analysis:</h3>
+            
+            <li><strong>Both answers are quite similar</strong>, that is to say, they both insist on the fact that the fountain was built to reinforce the authority of the Papacy over the city.</li>
+            <li><strong>They both underline the fact that the figure of Neptune was chosen to represent the Pope </strong>and its control over the area.</li>
+            <li><strong>None of them provided the name of the vicelegate Cardinal Pier Donato Cesi</strong>, involved in the promotion of the fountain’s construction.</li>
+            <li>This time, <strong>Gemini also provides the name of the Pope of the time: Pius IV</strong>.</li>
+            <li>So far we can say that <strong>Gemini’s performance has improved throughout the process of prompting</strong> and that <strong>ChatGPT’S performance has remained accurate from the beginning</strong>.</li>
+            <li>However, as specified above, <strong>none of them provides an important detail on the commission of the artwork</strong>.</li><br>
+            
+            <h3>Prompt 2.3</h3>
+            
+            This time <strong>we provided the LLMs with the name of Tommaso Laureti to get more information about the architect of the fountain</strong> and also to see if their performance improved: <br>
+            <i>Q: Who built the Neptune Fountain in Bologna?</i><br>
+            <i>A: The Neptune Fountain in Bologna was built by Jean de Boulogne, called Giambologna.</i><br>
+            <i>Q3: What was Tommaso Laureti’s role in the project of the Neptune Fountain in Bologna?</i><br><br>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/051.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>ChatGPT:</h3>
+             
+             
+            <img src="immagini/052.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>Analysis:</h3>
+            
+            <li>At this point, after building a conversation with the language models, <strong>we obtained the correct and useful information about Tommaso Laureti</strong>, covering the lack of information that appeared in ArCo. Both Gemini and ChatGPT were precise in their last responses.</li>
+            <li><strong>The self-consistency prompting technique improves the performance of the language models with multi-step reasoning</strong>, sampling multiple chains of thought for the same problem.</li><br>
+            
+            <h3>Prompt 2.4</h3>
+            
+            Before moving onto the next prompt, <strong>we wanted to see if we could obtain further information on the commission of the fountain</strong>, as the name of the vicelegate Pier Donato Cesi is still missing from our results.<br>
+            <i>Q: Who built the Neptune Fountain in Bologna?</i><br>
+            <i>A: The Neptune Fountain in Bologna was built by Jean de Boulogne, called Giambologna.</i><br>
+            <i>Q4: Who exactly commissioned the Neptune Fountain in Bologna?</i><br><br>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/053.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>ChatGPT:</h3>
+            
+            <img src="immagini/054.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>Analysis:</h3>
+             
+            <li><strong>Neither Gemini nor ChatGPT provided us with the name we were looking for</strong>. </li>
+            <li>Gemini insisted on the role of the Bolognese Senate and ChatGPT on the role of the Pope Pius IV and that of Cardinal Borromeo,<strong> both pieces of information that had already been provided before.</strong>. </li><br>
+            
+            <h3>Prompt 3</h3>
+            
+            We decided to try to get the answer we were looking for in Prompt 2.4 with the <strong>few-shot prompting technique</strong>. This technique consists in <strong>providing a few examples of the task within the prompt to help the language model understand the context and thus get the desired results</strong>.The question was the following:<br><br>
+            
+            <i>Can you extract the names of who commissioned the Neptune Fountain in Bologna? Provide a list following this example:</i><br>
+            1) The Bolognese Senate<br>
+            2) Pope Pius IV<br>
+            3) Cardinal Carlo Borromeo<br>
+            4) ...<br><br>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/055.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>ChatGPT:</h3>
+            
+            <img src="immagini/056.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>Analysis:</h3>
+            
+            <li><strong>None of them provided us with the name of the vicelegate Pier Donato Cesi</strong>, the Cardinal that promoted the renovation of Bologna’s historical center. </li>
+            <li>However, in this case, <strong>Gemini did give us a much more accurate answer</strong> by describing both the role of the Bolognese Senate and that of the Pope in the commission of the fountain and the relation between the two powers.  </li>
+            <li><strong>ChatGPT gave us a superficial answer</strong>, repeating the clues we provided. </li> <br> 
+            
+            
+            <h3>Prompt 4</h3>
+            
+            Returning to the second author of the fountain, <strong>Tommaso Laureti</strong>, we wanted <strong>to obtain more information about the artist</strong> to enrich the Arco KG. We first used the <strong>zero-shot prompting technique</strong> to get a description of the artist by  asking: <br><br>
+            
+            <i>Who was Tommaso Laureti?</i>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/057.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>ChatGPT:</h3>
+            
+            <img src="immagini/058.jpg" alt="screen" width="700"> <br> <br>
+            <img src="immagini/059.jpg" alt="screen" width="700"> <br> <br>
+            
+            <h3>Analysis:</h3>
+            
+            <li>They both answered correctly and provided us with Laureti’s date of birth and death. </li>
+            <li>Nevertheless, it is clear that <strong>ChatGPT gave us a much more detailed answer</strong> than Gemini, <strong>providing us with more information about his career</strong> (his important works and association to the Mannerist movement), his place of origin (Palermo) and his artistic and academic contribution to the city of Bologna. </li> <br> <br>
+            
+            <h3>Prompt 4.1</h3>
+            
+            After having built a discussion with them on the topic, we then asked the LLMs <strong>to transform some of the information we got about Laureti into RDF format</strong>, using the Arco ontology. By doing so we employed a mix of the <strong>Zero-shot</strong> and of the <strong>Chain-of-Thought Prompting Technique</strong>.<br>
+            The Chain-of-thought prompting is a technique used in LLMs to improve their ability to perform complex reasoning tasks. It involves breaking down a complex problem into smaller, more manageable steps, and then guiding the LLM through each step sequentially. In this specific case, we simplified it by combining it with the Zero-shot prompting technique: we asked a zero-shot question in the previous step, Prompt 4, and then took some of the information from that answer to build a subsequent, more complex question.<br><br>
+            The question we asked for this prompt was the following:<br> <br>
+            <i>Tommaso Laureti was an Italian painter and architect who lived from approximately 1530 to 1602. He is known for his work on the Fontana del Nettuno in Bologna, where he designed the overall structure of the fountain, including the base, surrounding elements, and waterworks systems. Q: Could you transform this description into RDF format and use Arco ontology? </i> <br>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/060.jpg" alt="screen" width="700"> <br> <br>
+            <img src="immagini/061.jpg" alt="screen" width="700"> <br> <br>
+            <img src="immagini/062.jpg" alt="screen" width="670"> <br> <br>
+            
+            
+            <pre>
+Copy of the code:
+        &lt;https://w3id.org/arco/resource/Person/123456789&gt; rdf:type foaf:Person;
+        foaf:name "Tommaso Laureti";
+        arco:livedFrom "1530";
+        arco:livedUntil "1602";
+        dc:description "Italian painter and architect known for his work on the Fontana del Nettuno in Bologna."
+    </pre> <br>
+    
+        
+            <h3>ChatGPT:</h3>
+            
+            <img src="immagini/063.jpg" alt="screen" width="600"> <br> <br>
+            <img src="immagini/064.jpg" alt="screen" width="600"> <br> <br>
+            <img src="immagini/065.jpg" alt="screen" width="600"> <br> <br>
+            <img src="immagini/066.jpg" alt="screen" width="600"> <br> <br>
+            
+            
+            <pre>
+Copy of the code:
+@prefix arco: <https://w3id.org/arco/ontology/arco/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Define Tommaso Laureti
+<http://example.org/person/TommasoLaureti>
+    a foaf:Person ;
+    foaf:name "Tommaso Laureti" ;
+    foaf:birthDate "1530"^^xsd:gYear ;
+    foaf:deathDate "1602"^^xsd:gYear ;
+    foaf:occupation "painter", "architect" ;
+    foaf:knows <http://example.org/monument/FontanaDelNettuno> .
+
+# Define Fontana del Nettuno
+<http://example.org/monument/FontanaDelNettuno>
+    a arco:CulturalProperty ;
+    dcterms:title "Fontana del Nettuno" ;
+    dcterms:creator <http://example.org/person/TommasoLaureti>, <http://example.org/person/Giambologna> ;
+    schema:designer <http://example.org/person/TommasoLaureti> ;
+    arco:hasArchitecturalElement <http://example.org/monument/FontanaDelNettuno_Base>,
+                                  <http://example.org/monument/FontanaDelNettuno_Waterworks> ;
+    rdfs:comment "Fontana del Nettuno in Bologna, designed by Tommaso Laureti who created the overall structure including the base, surrounding elements, and waterworks system." .
+
+# Define the Base of the Fountain
+<http://example.org/monument/FontanaDelNettuno_Base>
+    a arco:ArchitecturalElement ;
+    rdfs:label "Base of Fontana del Nettuno" ;
+    dcterms:creator <http://example.org/person/TommasoLaureti> .
+
+# Define the Waterworks System of the Fountain
+<http://example.org/monument/FontanaDelNettuno_Waterworks>
+    a arco:ArchitecturalElement ;
+    rdfs:label "Waterworks system of Fontana del Nettuno" ;
+    dcterms:creator <http://example.org/person/TommasoLaureti> .
+
+# Define Giambologna as the sculptor
+<http://example.org/person/Giambologna>
+    a foaf:Person ;
+    foaf:name "Giambologna" ;
+    foaf:knows <http://example.org/monument/FontanaDelNettuno> ;
+    foaf:occupation "sculptor" 
+
+    </pre>
+            
+            
+           <h3>Analysis:</h3>
+           
+           <li><strong>Gemini</strong> gave us much more compacted results, providing an RDF representation that focuses on presenting the most essential information about Tommaso Laureti. It also <strong>explained step by step how to create a triple</strong> on the information we provided, which we found very useful.</li> 
+           <li>ChatGPT provided a much longer RDF representation with prefixes and attempted to capture the relation between all the objects and people involved. <strong>ChatGPT also seems to be more skilled at using the ArCo terminology</strong>.</li> <br><br>
+           
+                      
+           <h3>Prompt 5</h3>
+            
+           We then used the <strong>zero-shot prompting technique to get information about Giambologna’s works still preserved in Bologna</strong>, as we couldn’t obtain these details from our search in ArCo.<br><br>
+           <i>Can you provide a list of the works of Jean de Boulogne known as “Giambologna” preserved in Bologna?</i>
+            
+           <h3>Gemini:</h3>
+            
+           <img src="immagini/067.jpg" alt="screen" width="700"> <br> <br>
+           
+           <h3>ChatGPT:</h3>
+           
+           <img src="immagini/068.jpg" alt="screen" width="700"> <br> <br>
+           
+           
+           <h3>Analysis:</h3>
+           
+           <li><strong>So Gemini clearly was not able to provide us with the correct answer</strong>.</li>
+           <li>In comparison, <strong>ChatGPT</strong> was more accurate and <strong>gave us part of the answers we were looking for</strong>. As the website of the <a href="https://bbcc.regione.emilia-romagna.it/pater/loadcard.do?id_card=179791&force=1">Patrimonio Culturale dell’Emilia Romagna </a> confirms, <strong>there is a statue of Mercurio by Giambologna preserved at the Museo Civico Medievale</strong> in Bologna, which ChatGPT confirmed. In addition,<strong> two other bronze statues by the artist can be found at the same site</strong>: one <strong>a small-scale reproduction of the Neptune Fountain</strong> and the other a <strong>portrait of Michelangelo Buonarroti</strong> (which has been attributed to Giambologna). <strong>ChatGPT only talks in general terms about the two artworks</strong> calling them ‘various bronze reliefs and sculpture’ but it does provide the location. </li>
+           <li>However, <strong>ChatGPT makes a mistake </strong> as the third artwork it provides, <strong>‘Samson slaying a Philistine’ , is not preserved in Bologna </strong> but rather at the <a href="https://www.vam.ac.uk/articles/samson-slaying-a-philistine-by-giambologna?srsltid=AfmBOor0AQGqm5SRUj_PpcQaplLzJXWqVD_6VlbWWMJSHdn3j1Q6YxMW "> Victoria and Albert Museum </a> in London (as we learned from the Museum’s website)  </li>
+           <li>So ChatGPT’s performance helped us more than Gemini but was <strong> not 100% accurate </strong>.</li> <br><br>
+           
+           
+           <h3>Prompt 6</h3>
+           
+           We used the <strong>Chain-of-Thought Prompting technique</strong> to obtain information about Giambologna’s work <i>Mercurio</i> and its location in an RDF format. We used as an example an artwork authored by Giambologna previously found in ArCo.<br>
+           As already mentioned above, this technique consists in <strong>breaking down a complex problem into smaller, more manageable steps</strong>.<br><br>
+           
+           The question we asked for Prompt 6 was the following: <br><br>
+           
+           <i>The “Oceano” of Giambologna is kept at Bargello, in Florence, Italy.</i><br>
+           <i>RDF format: IRI Oceano = </i><a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286790">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286790 </a> <br>
+           <i>is kept in = a-loc:hasCulturalInstituteOrSite = </i><a href="https://w3id.org/arco/resource/CulturalInstituteOrSite/">https://w3id.org/arco/resource/CulturalInstituteOrSite/ </a>  <br>
+           <i>IRI Museo del Bargello = </i> <a href="https://w3id.org/arco/resource/CulturalInstituteOrSite/fd60027675ee78994f1fa2f8e4c16f45 ">https://w3id.org/arco/resource/CulturalInstituteOrSite/fd60027675ee78994f1fa2f8e4c16f45  </a><br>
+           
+           <i>HistoricOrArtisticProperty:0900286790 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite: fd60027675ee78994f1fa2f8e4c16f45</i> <br><br>
+           
+           <i>Based on the previous example that I gave you, could you transform the following sentence “The <strong>"Mercurio"</strong> by Giambologna in Bologna is housed at the <strong>Museo Civico Medievale</strong>.” into <strong>RDF format</strong> using the <strong>ArCo ontology</strong>?</i><br><br>
+           
+           <h3>Gemini:</h3>
+           
+           <img src="immagini/069.jpg" alt="screen" width="600"> <br> <br>
+           <img src="immagini/070.jpg" alt="screen" width="600"> <br> <br>
+           <img src="immagini/071.jpg" alt="screen" width="600"> <br> <br>
+           <img src="immagini/072.jpg" alt="screen" width="600"> <br> <br>
+           
+           <pre>
+Copy of the code:           
+    <code>&lt;placeholder_mercurio_iri&gt; a arco:HistoricOrArtisticProperty ; a-cd:hasTitle "Mercurio"^^xsd:string ; 
+    a-cd:hasAuthor n4:1b6513fa0d43bfc0f98f36c6e9f5057c ; 
+    a-loc:isLocatedIn cis:GeographicalFeature ; 
+    rdfs:label "Bologna"^^xsd:string . 
+
+&lt;placeholder_museo_iri&gt; a cis:GeographicalFeature ; 
+    rdfs:label "Museo Civico Medievale"^^xsd:string .
+
+&lt;placeholder_mercurio_iri&gt; a-loc:isHousedIn &lt;placeholder_museo_iri&gt; . 
+    </code></pre> <br><br>
+    
+            
+            <h3>ChatGPT:</h3>
+            
+            <img src="immagini/073.jpg" alt="screen" width="600"> <br> <br>
+            <img src="immagini/074.jpg" alt="screen" width="600"> <br> <br>
+            
+            Copy of the code:<br>
+            IRI Mercurio = <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900382261 ">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900382261  </a><br>
+            is kept in = a-loc:hasCulturalInstituteOrSite = <a href="https://w3id.org/arco/resource/CulturalInstituteOrSite/">https://w3id.org/arco/resource/CulturalInstituteOrSite/ </a><br>
+            IRI Museo Civico Medievale = <a href="https://w3id.org/arco/resource/CulturalInstituteOrSite/fd60027675ee78994f1fa2f8e4c16f46">https://w3id.org/arco/resource/CulturalInstituteOrSite/fd60027675ee78994f1fa2f8e4c16f46 </a><br>
+            HistoricOrArtisticProperty:0900382261 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:fd60027675ee78994f1fa2f8e4c16f46<br><br>
+            
+            <h3>Analysis:</h3>
+            
+            <li><strong>Gemini provides a base to construct a series of triples </strong> and underlines that <strong>they have to be completed with the missing IRIs</strong> of the <i>Mercurio</i> and of the <i>Museo Civico Medievale</i>.</li>
+            <li><strong>ChatGPT does the same but tries to follow the structure we provided</strong> in the question to create the RDF representation.</li>
+            <li>They both give useful explanations on how to create the triples.</li><br><br>
+
+            
+            <h3>Prompt 7</h3>
+            
+            We used again the <strong>Chain-of-Thought Prompting Technique</strong> by providing as a base a triple we obtained from the CONSTRUCT query (QUERY 9) <strong>to prompt the LLMs to build a triple on Giambologna’s <i>Mercurio</i> in Bologna</strong>, an artwork we were not able to find in ArCo:<br><br>
+            
+            <i>Subject Item<br>
+            n2:0900382260<br>
+            a-cd:hasAuthor<br>
+            n4:1b6513fa0d43bfc0f98f36c6e9f5057c<br>
+            l0:name<br>
+            testa di vecchio (scultura) by Boulogne Jean de detto Giambologna (sec. XVI) testa di vecchio (scultura) di Boulogne Jean de detto Giambologna (sec. XVI) <br><br>
+            Q: Following this example can you create an RDF triple about the Mercurio kept at the Museo Civico in Bologna authored by Giambologna?</i><br><br>
+            
+            <h3>Gemini:</h3>
+            
+            <img src="immagini/075.jpg" alt="screen" width="600"> <br> <br>
+            <img src="immagini/076.jpg" alt="screen" width="600"> <br> <br>
+            
+            <pre>
+Copy of the code:
+n5:1234567890 a-cd:hasAuthor n4:1b6513fa0d43bfc0f98f36c6e9f5057c . l0:name "Mercurio"^^xsd:string . l1:location "Museo Civico, Bologna"^^xsd:string
+    </pre> <br>
+    
+    
+            <h3>ChatGPT:</h3>
+            
+            <img src="immagini/077.jpg" alt="screen" width="600"> <br> <br>
+            <img src="immagini/078.jpg" alt="screen" width="600"> <br> <br>
+            
+            <pre>
+Copy of the code:
+Subject: Item n2:0900382261  
+Predicate: a-cd:hasAuthor  
+Object: n4:1b6513fa0d43bfc0f98f36c6e9f5057c  
+Predicate: 10:name  
+Object: Mercurio (scultura) by Boulogne Jean de detto Giambologna (sec. XVI) Mercurio (scultura) di Boulogne Jean de detto Giambologna (sec. XVI)  
+
+    </pre> <br>
+    
+           <h3>Analysis:</h3>
+           
+           <li><strong>They both provide a good base to construct a triple </strong> indicating that the <i>Mercurio</i> at the <i>Museo Civico Medievale</i> in Bologna is authored by Giambologna. </li>
+           <li>In both cases the subject is incorrect as <strong>this version of the <i>Mercurio</i> is not present in ArCo so it’s impossible to retrieve its URI.</strong> </li>
+           <li>Again, <strong>ChatGPT follows more accurately the example provided</strong>. </li><br>
+           
+           
+           <h3>Prompt 8</h3>
+           
+           We used again the <strong>Chain-of-Thought Prompting Technique</strong> using as an example a triple we created on an artwork by Giambologna commissioned by de’ Medici family and asked the LLMs <strong>to perform the same task on the commission of the Neptune fountain</strong>. <br><br>
+           
+           <i>Subject:</i> <a href="https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900293875-2 ">https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900293875-2  </a><br>
+           
+           <i>Predicate: a-cd:HasCommittent</i><br>
+           
+           <i>Object (Francesco I de’ Medici):</i> <a href="https://dati.beniculturali.it/lodview-arco/resource/Agent/d6b1ea1124ce452d2c987e5860cb32a9 ">https://dati.beniculturali.it/lodview-arco/resource/Agent/d6b1ea1124ce452d2c987e5860cb32a9  </a><br>
+           
+           <i>Based on the previous example that I gave you, could you create an RDF triple for the following sentence: “Pope Pius IV has commissioned the Neptune Fountain”?</i><br><br>
+           
+           
+           <h3>Gemini:</h3>
+           
+           <img src="immagini/079.jpg" alt="screen" width="700"> <br> <br>
+           <img src="immagini/080.jpg" alt="screen" width="700"> <br> <br>
+           
+           <pre>
+Copy of the code - New IRI:
+https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900293875-2 a-cd:HasCommittent <placeholder_iri_pope_pius_iv> .
+
+
+    </pre> <br>
+    
+           
+           <h3>ChatGPT:</h3>
+           
+           <img src="immagini/081.jpg" alt="screen" width="700"> <br> <br>
+           <img src="immagini/082.jpg" alt="screen" width="700"> <br> <br>
+           
+           <pre>
+Copy of the code:
+Subject: https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286790
+Predicate: a-cd:HasCommittent
+Object: https://dati.beniculturali.it/lodview-arco/resource/Agent/pope-pius-iv
+
+    </pre> 
+           
+           <h3>Analysis:</h3>
+           
+           <li>Again, <strong>Gemini provided us with a step by step explanation on how to proceed to create the triple</strong>. We already knew that for the subject we had to use the fountain’s IRI and that for the predicate we had to use “a-cd:HasCommitent”. As for the object <strong>since the IRI for Pope Pius IV does not exist, it told us to create a new one</strong>, which we had already assumed.</li><br>
+           <li><strong>ChatGpt did the same</strong> by providing an RDF triple representation and specified that an IRI for Pope Pius IV needs to be created.</li><br>
+           <li>We tried the same exact question and technique as above only with the Bolognese Senate as a committent but obtained similar results. </li><br>
+           <li>So both answers are almost correct but <strong>we need the correct IRIs</strong>, in the case of the committent Pope Pius IV, however, this IRI doesn’t exist as he is not present in ArCO. <strong>This could be something we could enrich the graph with</strong>.</li><br><br><br>
+           
+           <a href="step2.html">STEP 2</a>   <a href="step4.html" style="display: block; text-align: right;">STEP 4</a>
+    
+    
+    
+
+
+			
+			</article>								
+		</main>
+
+		<nav id="left" class="column">
+		
+		
+
+		</nav>
+
+		<div id="right" class="column">
+			
+			
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer">
+		
+		<small>questo è un progetto per UNIBO</small>
+		
+		</footer>
+	</div>
+
+</body>
+
+</html>
